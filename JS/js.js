@@ -29,7 +29,6 @@ function display() {
      Funcion "Encriptar"
 ------------------------ */
 function encrypted() {
-     display();
 
      var text = document.getElementById("txtArea").value;
      var letter = text.replace(/a/g,"ai").replace(/e/g,"enter").replace(/i/g,"imes").replace(/o/g,"ober").replace(/u/g,"ufat");
