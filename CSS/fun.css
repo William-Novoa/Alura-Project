@@ -19,12 +19,9 @@ Sheet Version: 1.0
 /* ------------------------
      Animacion Del Titulo
 ------------------------ */
-#me {
+/*#me {
      cursor: none;
-     /* writing-mode: vertical-lr;
-     position: absolute;
-     rotate: 180deg; */
-}
+}*/
 
 #me span {
      opacity: 0;
