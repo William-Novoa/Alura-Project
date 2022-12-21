@@ -1,0 +1,197 @@
+/*
+Sheet Name: Styles
+Author: William Novoa
+Author URI: https://github.com/William-Novoa
+Sheet Version: 1.0
+*/
+
+/* -----------------------------
+     Importacion de Tipografias
+----------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); /* font-family: 'Quicksand', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap'); /* font-family: 'Hind', sans-serif; */
+
+/* --------------------
+     Root (Variables)
+-------------------- */
+:root {
+     --main-font-family: 'Quicksand', sans-serif;
+     --main-headings-font-family: 'Hind', sans-serif;
+     /* Colors */
+     --main-color-gold: #FDBD01;
+     --main-color-black1: #000000;
+     --main-color-black2: #222222;
+     --main-color-white: #ffffff;
+}
+*, *::before, *::after{
+     margin: 0;
+     padding: 0;
+     scroll-behavior: smooth;
+}
+
+/* ----------------------------
+     Barra De Desplazamiento
+---------------------------- */
+::-webkit-scrollbar {
+     width: 5px;
+     height: 5px;
+}
+::-webkit-scrollbar-track {
+     background: transparent;
+}
+::-webkit-scrollbar-thumb {
+     background: var(--main-color-gold);
+     border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+     background: var(--main-color-gold);
+}
+
+/* ------------------------
+     Tipografia Y Estilos
+------------------------ */
+html{
+     font-size: 62.5%;
+}
+p, ol, ul, li, div, textarea, button {
+     font-family: var(--main-font-family);
+     font-weight: 500;
+     letter-spacing: 0.5px;
+     line-height: 2;
+}
+a {
+     text-decoration: none;
+     color: var(--main-color-white);
+}
+a.dark {
+     color: black;
+}
+
+/* -------------
+     Encabezamientos
+------------- */
+h1, h2, h3, h4, h5, h6 {
+     letter-spacing: 5px;
+     font-weight: 700;
+     font-family: var(--main-headings-font-family);
+     text-transform: uppercase;
+}
+h1 {
+     font-size: 35px;
+     margin: 0;
+}
+h2 {
+     font-size: 32px;
+}
+h3 {
+     font-size: 26px;
+}
+h4 {
+     font-size: 24px;
+}
+h5 {
+     font-size: 16px;
+}
+h6 {
+     font-size: 14px;
+}
+
+/* -------------
+     Figuras
+------------- */
+figcaption {
+     font-size: 26px;
+     text-align: center;
+     letter-spacing: 5px;
+     font-weight: 700;
+     font-family: var(--main-headings-font-family);
+     text-transform: uppercase;
+}
+
+/* -------------
+     Imagenes
+------------- */
+img {
+     height: auto;
+     max-width: 100%;
+}
+
+/* --------------------------------------------
+     Contenido dentro del cuerpo de la pagina
+-------------------------------------------- */
+body {
+     font-size: 17px;
+     background-color: var(--main-color-black2);
+     margin: 0;
+     color: #fff;
+}
+
+header {
+     padding: 20px 4%;
+}
+
+.site-container {
+     width: min(100% - 10px, 1250px);
+     margin-inline: auto;
+}
+
+@media only screen and (max-width: 768px) {
+     .site-container {
+          width: 90%;
+     }
+}
+
+/* -------------
+     Textarea
+------------- */
+textarea {
+     resize: none;
+     width: 100%;
+     background-color: transparent;
+     padding: 5px;
+     font-family: var(--main-font-family);
+     letter-spacing: 1px;
+     transition: 0.5s;
+     border: none;
+     font-size: 20px;
+     color: var(--main-color-white);
+}
+
+textarea:focus {
+     outline: none !important;
+}
+
+textarea:first-of-type {
+     height: 30em;
+}
+textarea:last-of-type {
+     width: 85%;
+}
+
+/* -------------
+     Botones
+------------- */
+/* Caja para centrar los botones en el contenido */
+.buttons {
+     display: flex;
+     flex: 1;
+     flex-wrap: wrap;
+     align-items: center;
+     padding: 20px;
+     justify-content: center;
+}
+
+/* Estilo de los botones */
+button {
+     font-size: 18px;
+     cursor: pointer;
+     padding: 5px 10px;
+     margin: 5px 5px 35px;
+     background-color: var(--main-color-gold);
+     color: var(--main-color-black1);
+     border: 1px solid var(--main-color-gold);
+     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.309);
+     width: 132px;
+     place-self: center;
+}

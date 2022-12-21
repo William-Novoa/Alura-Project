@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>E/D App</title>
+     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+     <link rel="stylesheet" type="text/css" href="CSS/fun.css">
+</head>
+<body>
+     <header>
+          <div id="me">
+               <h1><a href="https://github.com/William-Novoa" target="_blank">W<span>illiam Novoa</span></a></h1>
+          </div>
+          <label class="theme">
+               <input type="checkbox">
+               <span class="button-theme"></span>
+          </label>
+     </header>
+     <div class="site-container">
+          <div class="invisible" aria-hidden="true" style="height: 100px;"></div>
+          <p>Desencriptador & Encriptador</p>
+          <div class="content-sidebar">
+               <div class="column">
+                    <textarea id="txtArea" spellcheck="true" oninput="this.value = this.value.toLowerCase()" placeholder="Inserte su texto aqui..."></textarea>
+                    <p>⚠️ Solo se acepta minusculas y sin acentos.</p>
+                    <div class="buttons">
+                         <button type="button" onclick="encrypted()">Encriptar</button>
+                         <button type="button" onclick="desencrypt()">Desencriptar</button>
+                    </div>
+               </div>
+               <div id="output" class="column">
+                    <textarea id="sidebar-output" style="display: none;" readonly></textarea>
+                    <button id="copy-btn" style="display: none;" onclick="copy()">Copiar</button>
+                    <!-- <div class="not-invisible" aria-hidden="true" style="height: 100px;"></div> -->
+                    <div id="output-data">
+                         <figure>
+                              <img src="imgs/searching.png" alt="Wait..." />
+                              <figcaption>Ningun mensaje fue encontrado</figcaption>
+                         </figure>
+                    </div>
+                    <br>
+               </div>
+          </div>
+     </div>
+     <script src="js/js.js"></script>
+</body>
+</html>
